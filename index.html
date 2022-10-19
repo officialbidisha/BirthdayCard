@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"
+      async
+    ></script>
+  </head>
+  <body class="body">
+    <canvas
+      id="confetti-canvas"
+      style="display: block; z-index: 999999; pointer-events: none"
+    >
+    </canvas>
+    <div
+      id="overlay"
+      style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      "
+    >
+      <div class="birthdayCard">
+        <div class="cardFront">
+          <div class="front-text">
+            <h3 class="happy">HAPPY</h3>
+            <h2 class="bday">BIRTHDAY</h2>
+            <h3 class="toyou">to you!</h3>
+          </div>
+          <div class="wrap-deco">
+            <div class="decorations"></div>
+            <div class="decorationsTwo"></div>
+          </div>
+          <div class="wrap-decoTwo">
+            <div class="decorations"></div>
+            <div class="decorationsThree"></div>
+          </div>
+          <div class="plate">
+            <div class="cake"></div>
+            <div class="flame"></div>
+          </div>
+        </div>
+
+        <div class="cardInside">
+          <div class="inside-text">
+            <h3 class="happy">HAPPY</h3>
+            <h2 class="bday">BIRTHDAY</h2>
+            <h3 class="toyou">to you!</h3>
+          </div>
+          <div class="wishes">
+            <p>Hey there</p>
+            <p>
+              Happy birthday!! You have the brightest of smiles and the most charming & mischevious eyes!
+              Here is wishing you many many happy returns of the day with loads of love. >May your day be filled with joy!
+            </p>
+            <p class="name">From 😺</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./confetti.js"></script>
+  </body>
+</html>
